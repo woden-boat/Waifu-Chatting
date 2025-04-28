@@ -8,7 +8,7 @@ class OllamaClient:
     def streamOllamaResponse(self, prompt, model=BaseConfig.MODEL_NAME):
         stream = self.ollama_client.chat(
             model=model,
-            messages=[{'role': 'user', 'content': f"{BaseConfig.pre_prompt}\n{prompt}"}],
+            messages=[{'role': 'user', 'content': f"{BaseConfig.PRE_PROMPT}\n{prompt}"}],
             stream=True
         )
         for chunk in stream:
