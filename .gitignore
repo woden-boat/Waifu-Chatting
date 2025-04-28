@@ -1,6 +1,10 @@
 # Python 缓存
 __pycache__/
 
+# python 测试代码
+test.py
+**/test.py
+
 # 虚拟环境
 .venv/
 
